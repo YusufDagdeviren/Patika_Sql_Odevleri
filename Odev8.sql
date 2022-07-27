@@ -3,7 +3,7 @@
 create table employee(
 id Integer primary key,
 name varchar(50) not null,    
-birthday date, not null
+birthday date not null,
 email varchar(100)    
 );
 
