@@ -11,7 +11,6 @@ where rental_rate in (select max(rental_rate) from film)
 
 
 
-
 --film tablosunda en düşük rental_rate ve en düşük replacement_cost değerlerine sahip filmleri sıralayınız.
 select * from film
 where rental_rate =(select min(rental_rate)from film) and replacement_cost =(select min(replacement_cost) from film)
