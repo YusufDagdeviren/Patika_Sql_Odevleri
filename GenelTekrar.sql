@@ -1,12 +1,8 @@
 --film tablosundan 'K' karakteri ile başlayan en uzun ve replacenet_cost u en düşük 4 filmi sıralayınız.
-(select * from film
+select * from film
 where title like 'K%'
-order by length
-limit 4)
-Union all
-(select * from film
-order by replacement_cost
-limit 4)
+order by length desc, replacement_cost
+limit 4
 
 
 
