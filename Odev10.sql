@@ -13,4 +13,3 @@ right join customer c on c.customer_id=p.customer_id;
 --customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.
 select r.rental_id, c.first_name, c.last_name from rental r
 full join customer c on c.customer_id=r.customer_id;
---sdsa
